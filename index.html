@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Peak Advisory Group</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #06134B;
+            width: 1126px;
+            margin: 0 auto;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        .header {
+            position: relative;
+            height: 649px;
+        }
+
+        .hero-banner {
+            position: absolute;
+            width: 1137px;
+            height: 649px;
+            left: 2px;
+            top: -173px;
+        }
+
+        .nav-bar {
+            position: absolute;
+            width: 1137px;
+            height: 96px;
+            left: 2px;
+            top: 0;
+            background: #FFFFFF;
+        }
+
+        .logo {
+            position: absolute;
+            width: 100px;
+            height: 85px;
+            left: 8px;
+            top: 6px;
+        }
+
+        .nav-phone {
+            position: absolute;
+            right: 20px;
+            top: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            font-size: 11px;
+            color: #0E176D;
+        }
+
+        .nav-menu {
+            position: absolute;
+            right: 20px;
+            top: 67px;
+            font-size: 13px;
+            color: #06134B;
+        }
+
+        /* Hero Content */
+        .hero-content {
+            position: absolute;
+            width: 801px;
+            left: 170px;
+            top: 160px;
+            background: rgba(37,51,75,0.541);
+            padding: 20px;
+            color: white;
+        }
+
+        .hero-title {
+            font-size: 39px;
+            margin-bottom: 15px;
+        }
+
+        .hero-subtitle {
+            font-size: 16px;
+        }
+
+        /* Overview Section */
+        .overview {
+            margin-top: 60px;
+            padding: 0 84px;
+        }
+
+        .overview-text {
+            display: flex;
+            gap: 20px;
+        }
+
+        .overview-column {
+            flex: 1;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Core Values */
+        .core-values {
+            margin-top: 40px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #04156A;
+            margin-bottom: 30px;
+            padding-left: 84px;
+        }
+
+        .value-cards {
+            display: flex;
+            gap: 20px;
+            padding: 0 82px;
+        }
+
+        .value-card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.161);
+            flex: 1;
+        }
+
+        .value-title {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .value-text {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        /* Expertise Section */
+        .expertise {
+            margin-top: 60px;
+            position: relative;
+        }
+
+        .expertise-header {
+            background: #06134B;
+            padding: 40px 82px;
+            color: white;
+        }
+
+        .expertise-intro {
+            max-width: 600px;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .expertise-cards {
+            display: flex;
+            gap: 30px;
+            padding: 40px 82px;
+        }
+
+        .expertise-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            width: 218px;
+            height: 406px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.161);
+        }
+
+        .expertise-icon {
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        /* Case Studies Section */
+        .case-studies {
+            background: #06134B;
+            padding: 40px 0;
+            color: white;
+            margin-top: 60px;
+        }
+
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 0 82px;
+        }
+
+        .case-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            color: #06134B;
+            height: 357px;
+            position: relative;
+        }
+
+        .case-image {
+            width: 195px;
+            height: 195px;
+            margin: 0 auto 20px;
+        }
+
+        /* Buttons */
+        .btn {
+            background: #0FD7CA;
+            color: #06134B;
+            padding: 8px 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .details-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: white;
+            border: 1px solid #05124A;
+            border-radius: 10px;
+            padding: 6px 22px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="hero-background.jpg" alt="Hero background" class="hero-banner">
+        <nav class="nav-bar">
+            <img src="logo.png" alt="Atlas Peak Advisory Group Logo" class="logo">
+            <div class="nav-phone">
+                <img src="phone-icon.png" alt="Phone icon" width="31" height="31">
+                <span>+1 (800) 555 APAG</span>
+            </div>
+            <div class="nav-menu">
+                Home | About Us | Services | Case Studies | Contact
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1 class="hero-title">Elevating Business Excellence and Efficiency</h1>
+            <p class="hero-subtitle">Empowering Companies with Strategic Innovation and Operational Excellence</p>
+        </div>
+    </header>
+
+    <section class="overview">
+        <div class="overview-text">
+            <div class="overview-column">
+                <strong>Company Overview:</strong> Atlas Peak Advisory Group leverages deep technical expertise and industry-leading methodologies to drive operational efficiency, profitability, and sustainable growth for companies worldwide.
+            </div>
+            <div class="overview-column">
+                <strong>Mission Statement:</strong> Our mission is to transform businesses by aligning strategy with execution, enabling clients to achieve measurable and sustainable improvements.
+            </div>
+        </div>
+    </section>
+
+    <section class="core-values">
+        <h2 class="section-title">Core Values</h2>
+        <div class="value-cards">
+            <div class="value-card">
+                <h3 class="value-title">Lean Six Sigma Commitment</h3>
+                <p class="value-text">We implement Lean and Six Sigma methodologies to reduce waste, optimize resources, and improve cycle times, delivering millions in annual savings for our clients</p>
+            </div>
+            <div class="value-card">
+                <h3 class="value-title">Leadership Development</h3>
+                <p class="value-text">Our trauma-informed approach to leadership reduces burnout by 18% and increases retention by 12%, creating a culture of sustainable high performance.</p>
+            </div>
+            <div class="value-card">
+                <h3 class="value-title">Safety and Sustainability</h3>
+                <p class="value-text">Our practices protect your workforce and contribute to environmental responsibility, achieving 17% lower incident rates and 18% energy savings.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="expertise">
+        <h2 class="section-title">Our Core Expertise</h2>
+        <div class="expertise-header">
+            <p class="expertise-intro">Atlas Peak Advisory Group leverages deep technical expertise and industry-leading methodologies to drive operational efficiency, profitability, and sustainable growth for companies worldwide.</p>
+            <a href="#contact" class="btn">Get in Touch with Us</a>
+        </div>
+        <div class="expertise-cards">
+            <div class="expertise-card">
+                <img src="operational-consulting-icon.png" alt="Operational Consulting" class="expertise-icon">
+                <h3 class="value-title">Operational Consulting</h3>
+                <p class="value-text">Specialists in Lean and Six Sigma, we streamline operations to eliminate waste, increase productivity, and reduce costs. Our clients experience outcomes like $15M in annual savings and a 30% reduction in cycle times.</p>
+                <a href="#" class="details-btn">Learn more</a>
+            </div>
+            <div class="expertise-card">
+                <img src="predictive-maintenance-icon.png" alt="Predictive Maintenance" class="expertise-icon">
+                <h3 class="value-title">Predictive Maintenance</h3>
+                <p class="value-text">Our predictive maintenance strategies reduce unplanned downtime by 18%, cut maintenance costs by 15%, and extend asset life. With advanced analytics, we deliver reliable, cost-saving results</p>
+                <a href="#" class="details-btn">Discover How</a>
+            </div>
+            <div class="expertise-card">
+                <img src="leadership-development-icon.png" alt="Leadership Development" class="expertise-icon">
+                <h3 class="value-title">Leadership Development & Cultural Transformation</h3>
+                <p class="value-text">Our trauma-informed leadership programs reduce burnout by 18% and increase retention by 12%, creating resilient, high-performing teams that drive sustainable change</p>
+                <a href="#" class="details-btn">Explore Our Approach</a>
+            </div>
+            <div class="expertise-card">
+                <img src="market-scalability-icon.png" alt="Market Scalability" class="expertise-icon">
+                <h3 class="value-title">Market Scalability & Expansion</h3>
+                <p class="value-text">We support rapid growth, helping clients achieve up to 197% revenue growth and a 34% increase in EBITDA within 12 months, ensuring scalable success</p>
+                <a href="#" class="details-btn">See Our Impact</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-studies">
+        <h2 class="section-title" style="color: white; margin-left: 16px;">Case Studies</h2>
+        <div class="case-grid">
+            <div class="case-card">
+                <img src="rcm-case-study.png" alt="RCM Case Study" class="case-image">
+                <h3 class="value-title">Reliability-Centered Maintenance (RCM) in Manufacturing</h3>
+                <p class="value-text">Implemented an RCM program that reduced downtime by 18%, increased asset availability by 22%, and lowered costs by 15%.</p>
+                <a href="#" class="details-btn">Details</a>
+            </div>
+            <div class="case-card">
+                <img src="supply-chain-case-study.png" alt="Supply Chain Case Study" class="case-image">
+                <h3 class="value-title">Supply Chain Optimization</h3>
+                <p class="value-text">Reduced lead times by 25% and increased on-time deliveries by 30%, saving $21M in working capital annually</p>
+                <a href="#" class="details-btn">Details</a>
+            </div>
+            <div class="case-card">
+                <img src="digital-transformation-case-study.png" alt="Digital Transformation Case Study" class="case-image">
+                <h3 class="value-title">Digital Transformation in Predictive Maintenance</h3>
+                <p class="value-text">Predictive maintenance reduced equipment failures by 35% and increased asset lifespan by 2 years</p>
+                <a href="#" class="details-btn">Details</a>
+            </div>
+            <div class="case-card">
+                <img src="lean-manufacturing-case-study.png" alt="Lean Manufacturing Case Study" class="case-image">
+                <h3 class="value-title">Lean Manufacturing for Process Improvement</h3>
+                <p class="value-text">Lean manufacturing reduced cycle times by 24%, increased yield by 15%, and cut operational costs by 13%</p>
+                <a href="#" class="details-btn">Details</a>
+            </div>
+            <div class="case-card">
+                <img src="energy-efficiency-case-study.png" alt="Energy Efficiency Case Study" class="case-image">
+                <h3 class="value-title">Energy Efficiency Project in Manufacturing Operations</h3>
+                <p class="value-text">Reduced energy consumption by 18% and achieved $2M in annual savings, contributing to a 12% reduction in carbon emissions.</p>
+                <a href="#" class="details-btn">Details</a>
+            </div>
+            <div class="case-card">
+                <img src="concrete-printing-case-study.png" alt="3D Concrete Printing Case Study" class="case-image">
+                <h3 class="value-title">Engineering Solutions for 3D Concrete Printing</h3>
+                <p class="value-text">Developed a sustainable concrete mix that reduced carbon emissions by 27%, decreased material waste by 42%, and lowered labor costs by 78%</p>
+                <a href="#" class="details-btn">Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="leadership">
+        <div class="leader-profile">
+            <img src="leadership-portrait.png" alt="Paul Baltadonis" class="leader-image">
+            <p class="leader-bio">Paul Baltadonis, one of North America's top maintenance and operational strategists, has driven cost reductions of <strong>over $1.3BB</strong> across industries.</p>
+        </div>
+    </section>
+</body>
+</html>
