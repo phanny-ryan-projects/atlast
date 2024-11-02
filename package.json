@@ -1,0 +1,15 @@
+{
+  "name": "atlas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass scss/main.scss css/main.css -I scss -I node_modules -w -s compressed -q"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "5.3.3",
+    "sass": "^1.80.5"
+  }
+}

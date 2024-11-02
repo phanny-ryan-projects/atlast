@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="27.5" height="5" viewBox="0 0 27.5 5">
-    <g id="Group_15" data-name="Group 15" transform="translate(-87 -313)">
-        <line id="Line_1" data-name="Line 1" x2="25" transform="translate(87 315.5)" fill="none" stroke="#05124a" stroke-width="0.5"/>
-        <g id="Polygon_1" data-name="Polygon 1" transform="translate(114.5 313) rotate(90)" fill="#06134b">
+    <g id="Group_15" transform="translate(-87 -313)">
+        <line id="Line_1" x2="25" transform="translate(87 315.5)" fill="none" stroke="#05124a" stroke-width="0.5"/>
+        <g id="Polygon_1" transform="translate(114.5 313) rotate(90)" fill="#06134b">
             <path d="M 4.671089649200439 8.75 L 0.3289105594158173 8.75 L 2.5 0.9340779781341553 L 4.671089649200439 8.75 Z" stroke="none"/>
             <path d="M 2.5 1.868155956268311 L 0.6578211784362793 8.5 L 4.342178821563721 8.5 L 2.5 1.868155956268311 M 2.5 0 L 5 9 L 0 9 L 2.5 0 Z" stroke="none" fill="#05124a"/>
         </g>
