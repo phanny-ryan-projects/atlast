@@ -8,52 +8,42 @@ body {
   color: #06134B;
 }
 
-/* Header Styles */
-.header {
-  position: relative;
-  height: 649px;
+
+img {
+  max-width: 100%;
 }
 
-.hero-banner {
-  position: absolute;
-  width: 1137px;
-  height: 649px;
-  left: 2px;
-  top: -173px;
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1200px;
+  }
 }
 
-.nav-bar {
-  position: absolute;
-  width: 1137px;
-  height: 96px;
-  left: 2px;
-  top: 0;
-  background: #FFFFFF;
-}
-
-.logo {
-  height: 85px;
-  width: auto;
-}
-
-.nav-phone {
-  position: absolute;
-  right: 20px;
-  top: 12px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: bold;
-  font-size: 11px;
-  color: #0E176D;
-}
-
-.nav-menu {
-  position: absolute;
-  right: 20px;
-  top: 67px;
-  font-size: 13px;
+header .nav-link {
   color: #06134B;
+}
+
+.nav {
+  @media (max-width: 460px) {
+    .nav-mobile-break {
+      display: block;
+      width: 100%;
+      color: white;
+      visibility: hidden;
+      font-size: 1px;
+    }
+    justify-content: end;
+    font-size: 15px;
+  }
+}
+
+
+
+
+/* Header Styles */
+.logo {
+  width: 60px;
+  height: auto;
 }
 
 /* Hero Content */
@@ -84,6 +74,9 @@ body {
 
 .section-container {
   padding: 0 60px;
+  @media (max-width: 768px) {
+    padding: 0 30px;
+  }
 }
 
 .section-title {
@@ -165,6 +158,16 @@ body {
   grid-auto-columns: 1fr;
   gap: 30px;
   padding: 40px 0;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
 }
 
 .expertise-card {
@@ -180,6 +183,7 @@ body {
   height: 180px;
   margin: 0 auto 10px;
   display: block;
+  max-width: unset;
 }
 
 /* Case Studies Section */
@@ -195,6 +199,16 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   gap: 30px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
 }
 
 .case-card {
@@ -210,6 +224,7 @@ body {
   height: 195px;
   margin: 0 auto 20px auto;
   display: block;
+  max-width: unset;
 }
 
 /* Buttons */
