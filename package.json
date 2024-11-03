@@ -4,14 +4,16 @@
   "main": "index.js",
   "scripts": {
     "start": "sass scss/main.scss css/main.css -I scss -I node_modules -w -s compressed -q",
-    "serve": "ws"
+    "serve": "live-server"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "bootstrap": "5.3.3",
-    "local-web-server": "^5.4.0",
     "sass": "^1.80.5"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }
