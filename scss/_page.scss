@@ -10,7 +10,6 @@ body {
   color: #06134B;
 }
 
-
 img {
   max-width: 100%;
 }
@@ -47,7 +46,31 @@ header .nav-link {
 }
 
 /* Hero Content */
+.hero-container {
+  background: url('../images/hero-background.jpg') center bottom no-repeat;
+  background-size: cover;
+  padding: 50px 10vw 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 60vh;
+  position: relative;
+}
 
+.hero-content {
+  background: rgba(37, 51, 75, 0.54);
+  padding: 20px 30px;
+  margin: 0 auto;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+}
 
 .hero-title {
   font-size: min(6vw, 39px);
@@ -64,33 +87,6 @@ header .nav-link {
   font-style: italic;
 }
 
-.hero-container {
-  background: url('../images/hero-background.jpg') center bottom no-repeat;
-  background-size: cover;
-  padding: 50px 10vw 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 60vh;
-  position: relative;
-}
-
-
-.hero-content {
-  background: rgba(37, 51, 75, 0.54);
-  padding: 20px 30px;
-  margin: 0 auto;
-  display: inline-block;
-  color: white;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width:70%;
-  transform: translate(-50%, -50%);
-}
-
 @media (max-width: 768px) {
   .hero-container {
     height: 60vh;
@@ -98,34 +94,18 @@ header .nav-link {
   }
   
   .hero-content {
-    position: static;
-    transform: none;
-    left: auto;
-    top: auto;
     width: 100%;
-    border-radius: 0;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 20px 15px;
   }
-}
 
-/* navbar*/
-#navbarMenu{
-  z-index: 999; /* added z-index*/
-}
-/* Added media queries */
-@media (max-width: 768px) {
   .hero-title {
     font-size: 42px;
   }
   
   .hero-subtitle {
     font-size: 21px;
-  }
-
-  .hero-content {
-    width: 100%;
-    left: 0;
-    /*transform: translateY(-50%);*/
-    padding: 20px 15px;
   }
 }
 
@@ -174,7 +154,6 @@ header .nav-link {
 .core-values {
   margin-top: 40px;
 }
-
 
 .value-cards {
   display: flex;
@@ -338,7 +317,6 @@ header .nav-link {
   }
 }
 
-
 /* menu button */
 #menu-button {
   position: relative;
@@ -418,5 +396,4 @@ header .nav-link {
   .close .lines:after {
     transform: rotate3d(0, 0, 1, -45deg);
   }
-
 }

@@ -52,13 +52,13 @@
             <span class="lines"></span>
           </div>
         </div>
-        <div class="collapse navbar-collapse position-absolute top-100 bg-white w-100 shadow-sm" id="navbarMenu">
-          <nav id="mobile-menu" class="nav navbar-light fs-13 flex-column gap-3 p-3 mt-2 border-top">
-            <a class="nav-link py-2 px-2" href="#">Home</a>
-            <a class="nav-link py-2 px-2" href="#about-us">About Us</a>
-            <a class="nav-link py-2 px-2" href="#services">Services</a>
-            <a class="nav-link py-2 px-2" href="#case-studies">Case Studies</a>
-            <a class="nav-link py-2 px-2" href="#contact">Contact</a>
+        <div class="collapse navbar-collapse position-absolute top-100 bg-white" id="navbarMenu" style="left: 0; right: 0;">
+          <nav id="mobile-menu" class="nav navbar-light fs-13 flex flex-column gap-3 p-3 mt-2 border-top border-top-1">
+            <a class="nav-link py-0 px-2" href="#">Home</a>
+            <a class="nav-link py-0 px-2" href="#about-us">About Us</a>
+            <a class="nav-link py-0 px-2" href="#services">Services</a>
+            <a class="nav-link py-0 px-2" href="#case-studies">Case Studies</a>
+            <a class="nav-link py-0 px-2" href="#contact">Contact</a>
           </nav>
         </div>
       </div>
@@ -291,28 +291,29 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script>
-  $(function () {
-      const button = document.getElementById('menu-button');
-      const icon = document.getElementById('icon');
-      const navMenu = document.getElementById('navbarMenu');
 
-      button.onclick = () => {
-          const isClosed = icon.classList.contains('close');
-          
-          if(isClosed) {
-              icon.classList.remove('close');
-              navMenu.classList.remove('show');
-          } else {
-              icon.classList.add('close');
-              navMenu.classList.add('show');
-          }
-      };
+    $(function () {
+        const button = document.getElementById('menu-button');
+        const icon = document.getElementById('icon');
 
-      $('#mobile-menu a').on('click', function () {
-          icon.classList.remove('close');
-          navMenu.classList.remove('show');
-      });
-  })
+        button.onclick = () => {
+            const isClosed = icon.classList.contains('close');
+            console.log(isClosed);
+
+            if(isClosed) {
+                icon.classList.remove('close');
+                $('.navbar-collapse').collapse('hide');
+            } else {
+                icon.classList.add('close');
+                $('.navbar-collapse').collapse('show');
+            }
+        };
+
+        $('#mobile-menu a').on('click', function () {
+            icon.classList.remove('close');
+            $('.navbar-collapse').collapse('hide');
+        });
+    })
 </script>
 </body>
 
