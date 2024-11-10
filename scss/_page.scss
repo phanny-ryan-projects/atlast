@@ -41,8 +41,9 @@ header .nav-link {
 
 /* Header Styles */
 .logo {
-  width: 60px;
+  width: 175px;
   height: auto;
+  margin-left: -0.4rem;
 }
 
 /* Hero Content */
@@ -58,13 +59,19 @@ header .nav-link {
   margin: 0 auto;
   display: inline-block;
   color: white;
+  text-align: center;
 }
 
 .hero-title {
   font-size: 39px;
   margin-bottom: 15px;
   font-style: italic;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
+
 
 .hero-subtitle {
   font-size: 16px;
