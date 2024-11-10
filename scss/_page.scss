@@ -89,7 +89,7 @@ header .nav-link {
 
 /* navbar*/
 #navbarMenu{
-  z-index: 999;
+  z-index: 999; /* added z-index*/
 }
 /* Added media queries */
 @media (max-width: 768px) {
