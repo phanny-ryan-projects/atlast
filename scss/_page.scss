@@ -87,6 +87,10 @@ header .nav-link {
   transform: translate(-50%, -50%);
 }
 
+/* navbar*/
+#navbarMenu{
+  z-index: 999;
+}
 /* Added media queries */
 @media (max-width: 768px) {
   .hero-title {
